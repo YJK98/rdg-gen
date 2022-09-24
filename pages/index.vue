@@ -53,7 +53,7 @@ export default {
       this.readings = ft
     },
     spacing() {
-      this.readings = this.readings.replace(' ', '	').replace('	', ' ')
+      this.readings = this.readings.replace(' ', '	')
     },
     clip() {
       this.$refs.clone.focus()
