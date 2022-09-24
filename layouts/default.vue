@@ -38,7 +38,7 @@
       </v-container>
     </v-content>
 
-    <v-footer padless>
+    <v-footer fixed padless>
 
       <v-col class="text-center" cols="12">
         &emsp; ✍ with 💝, <v-tooltip right>
