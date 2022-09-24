@@ -21,6 +21,7 @@
           <!-- <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn> -->
               
           <v-btn color="primary" large @click="generate">💄</v-btn>
+          <v-btn color="primary" large @click="spacing">📑</v-btn>
           <v-btn color="primary" large @click="clip">📄</v-btn>
         </v-card-actions>
       </v-card>
@@ -50,6 +51,9 @@ export default {
         ft += `${l} ${random.float(...r).toFixed(this.reso)} ${random.float(...r).toFixed(this.reso)} ${random.float(...r).toFixed(this.reso)} \n`
       })
       this.readings = ft
+    },
+    spacing() {
+      this.readings = this.readings.replace(' ', '	').replace('	', ' ')
     },
     clip() {
       this.$refs.clone.focus()
