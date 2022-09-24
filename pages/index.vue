@@ -41,6 +41,7 @@ export default {
       readings: '',
       reso: 0,
       snackbar: false,
+      tab: true,
     }
   },
   methods: {
@@ -53,7 +54,8 @@ export default {
       this.readings = ft
     },
     spacing() {
-      this.readings = this.readings.replace('\s', '\t').replace('\t', '\s')
+      this.readings = this.tab ? this.readings.replace('\s', '\t') : this.readings.replace('\t', '\s')
+      this.tab != this.tab
     },
     clip() {
       this.$refs.clone.focus()
