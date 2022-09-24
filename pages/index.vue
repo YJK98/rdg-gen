@@ -54,7 +54,10 @@ export default {
       this.readings = ft
     },
     spacing() {
-      this.readings = this.tab ? this.readings.replace('\s', '\t') : this.readings.replace('\t', '\s')
+      if(this.tab)
+        this.readings = this.readings.replace('\s', '\t')
+      else
+        this.readings = this.readings.replace('\t', '\s')
       this.tab != this.tab
     },
     clip() {
