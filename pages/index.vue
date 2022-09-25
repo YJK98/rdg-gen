@@ -56,6 +56,7 @@ export default {
     spacing() {
        
         this.readings = this.tab ? this.readings.replace(/\n/, 'n').replace(/\s/g, '	').replace('n', '\n') : this.readings.replace(/\n/, 'n').replace(/\t/g, ' ').replace('n', '\n')
+        this.readings = this.readings.trim()
         this.tab = !this.tab
 
     },
