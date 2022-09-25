@@ -54,8 +54,9 @@ export default {
       this.readings = ft
     },
     spacing() {
-
-        this.readings = this.readings.replace(/\s/g, '	')
+       
+        this.readings = this.tab ? this.readings.replace(/\s/g, '	') : this.readings.replace(/\t/g, ' ')
+        this.tab = !this.tab
 
     },
     clip() {
