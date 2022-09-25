@@ -55,7 +55,7 @@ export default {
     },
     spacing() {
 
-        this.readings = this.readings.replace('\s', '\t')
+        this.readings = this.readings.replace(/\s/g, '	')
 
     },
     clip() {
