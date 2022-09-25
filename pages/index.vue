@@ -49,7 +49,7 @@ export default {
       let ft = ''
       this.readings.split('\n').map(l => {
         let r = l.split(' ').map(Number)
-        ft += `${l} ${random.float(...r).toFixed(this.reso)} ${random.float(...r).toFixed(this.reso)} ${random.float(...r).toFixed(this.reso)} \n`
+        ft += `${l} ${random.float(...r).toFixed(this.reso)} ${random.float(...r).toFixed(this.reso)} ${random.float(...r).toFixed(this.reso)}\n`
       })
       this.readings = ft
     },
